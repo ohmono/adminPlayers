@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const server = mongoose;
 const {
     MONGO_URI
 } = require('../config');
@@ -658,6 +657,6 @@ const players = [{
 
 Player.create(players).then(() => {
     console.log("Players created");
-    mosngoose.disconnect()
+    mongoose.disconnect()
 
 }).catch(console.log)

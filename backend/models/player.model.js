@@ -7,18 +7,20 @@ const PlayerSchema = new Schema({
     name: {
         type: String
     },
-    id: 219170,
-    ciud: {
+    id: {
+        type: Number
+    },
+    city: {
         type: String
     },
     address: {
         type: String
     },
-    idt: {
+    idType: {
         type: String
     },
     email: {
-        type: email
+        type: String
     },
     photo: {
         type: String
@@ -33,4 +35,4 @@ const PlayerSchema = new Schema({
     }
 });
 
-module.exports = mongoose.model("Player", PlayerSchema)
+module.exports = mongoose.model("Player", PlayerSchema);
