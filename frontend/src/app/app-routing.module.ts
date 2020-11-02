@@ -18,9 +18,9 @@ const routes: Routes = [{
 }, {
   path: 'search/:query', component: SearchComponent
 }, {
-  path: '**', pathMatch: 'full', redirectTo: 'home'
-}, {
   path: 'create', component: CreateComponent
+}, {
+  path: '**', pathMatch: 'full', redirectTo: 'home'
 }
 ];
 
