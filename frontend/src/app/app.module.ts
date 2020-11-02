@@ -11,7 +11,9 @@ import { PlayersComponent } from './pages/players/players.component';
 import { PlayerComponent } from './pages/player/player.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { CreateComponent } from './pages/create/create.component';
+import { JoinComponent } from './pages/join/join.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { HttpClientModule } from '@angular/common/http'
     PlayersComponent,
     PlayerComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    CreateComponent,
+    JoinComponent
   ],
   imports: [
     BrowserModule,

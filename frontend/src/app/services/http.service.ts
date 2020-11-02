@@ -21,5 +21,8 @@ export class HttpService {
   public searchPlayer(query: string) {
     return this._http.get<Player[]>(this.baseUrl + '/player/search/' + query);
   }
+  /*public createPlater(Player: Player){
+    return this._http.post(this.baseUrl+ '/')
+  }*/
 }
 

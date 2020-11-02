@@ -5,6 +5,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { PlayersComponent } from './pages/players/players.component';
 import { PlayerComponent } from './pages/player/player.component';
 import { SearchComponent } from './pages/search/search.component';
+import { CreateComponent } from './pages/create/create.component';
 
 const routes: Routes = [{
   path: 'home', component: HomeComponent
@@ -18,6 +19,8 @@ const routes: Routes = [{
   path: 'search/:query', component: SearchComponent
 }, {
   path: '**', pathMatch: 'full', redirectTo: 'home'
+}, {
+  path: 'create', component: CreateComponent
 }
 ];
 

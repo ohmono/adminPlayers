@@ -10,5 +10,4 @@ export interface Player {
     bornDate: String,
     createdAt: Date,
     updatedAt: Date
-
 }
