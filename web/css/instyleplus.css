@@ -1,0 +1,17 @@
+table.tabla{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+table.tabla thead tr {
+    background-color: orange;
+    color: #ffffff;
+    text-align: left;
+}
+table.tabla th,
+table.tabla td {
+    padding: 12px 15px;
+}
