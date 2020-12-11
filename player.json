@@ -1,0 +1,61 @@
+
+CA: Validar campos obligatorios 
+{   name, 
+    address,  
+    email,
+    city,
+    idType,
+    id,
+    bornDate,
+    phoneNumber,
+    photo,
+    club, 
+    teams{},
+    Estadisticas{}  }
+de la solicitud para creacion de un Jugador.
+
+CA: Y opsionales
+{  club, 
+   teams{},
+   Estadisticas{}  }
+
+CA: estadísticas por torneo
+{
+  minutos jugados, 
+  partidos como inicialista
+}
+statsTorneo: {
+  idTorneo,
+  
+}
+
+
+
+
+
+estadísticas por partido
+{  
+  + idPartido : string
+  + inicialista : boolean
+  + minutosJugados : int
+  + puntosTotales : int
+  + totalFaltas : int
+  + canastas2 : int
+  + canastas3 : int
+  + tirosLibres : int
+}
+
+estadísticas torneo
+{
+  + idTorneo : string
+  + minutosJugadosTotales : int
+  + partidosInicialista : int
+  + promPartidosInicialista : float
+  + promMinutosPartido : float
+  + promPuntosPartido : float
+  + promFaltasPartido : float
+  + promCanastas2Partido : float
+  + promCanastas3Partido : float
+  + promTirosLibresPartido : float
+}
+
